@@ -1,8 +1,8 @@
 def factorial(n):
-	if n<2:
-		return 1
-	else:
-		return n*factorial(n-1)
+    if n<2:
+        return 1
+    else:
+        return n*factorial(n-1)
 def is_prime(n):
     if n < 2:
         return 0
@@ -12,3 +12,10 @@ def is_prime(n):
                 return "Not prime"
         else:
             return "Is prime"
+def GCD(a, b):
+    while a * b != 0:
+        if a > b:
+            a = a % b
+        else:
+            b = b % a
+    return b + a
