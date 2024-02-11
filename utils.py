@@ -12,6 +12,7 @@ def is_prime(n):
                 return "Not prime"
         else:
             return "Is prime"
+
 def GCD(a, b):
     while a * b != 0:
         if a > b:
@@ -20,7 +21,14 @@ def GCD(a, b):
             b = b % a
     return b + a
 
+
 def fib_rec(n):
     if n <= 2:
         return 1
     return fib_rec(n - 1) + fib_rec(n - 2)
+
+
+def is_even(number):
+    return number % 2 == 0
+
+ 
